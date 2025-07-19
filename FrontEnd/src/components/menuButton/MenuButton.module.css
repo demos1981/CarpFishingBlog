@@ -3,7 +3,7 @@
 .backgroundLogo {
   position: absolute;
   z-index: 1;
-  top: 1rem;
+
   left: 45%;
   width: 18rem;
   height: 3rem;
@@ -22,6 +22,14 @@
   font-size: 2rem;
   color: #b8e994;
   text-align: center;
+}
+.logoLink {
+  display: flex;
+  width: 18rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
 }
 .menu {
   position: absolute;
@@ -51,6 +59,9 @@
   z-index: 0;
   width: 2rem;
   height: 2rem;
+}
+.iconImage:hover {
+  filter: brightness(2);
 }
 .menuItem {
   display: block;

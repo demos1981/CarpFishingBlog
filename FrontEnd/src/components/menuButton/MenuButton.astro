@@ -1,7 +1,7 @@
 ---
 import styles from './MenuButton.module.css';
 import startImage from '../../assets/startPicture.png';
-import newsImage from '../../assets/news.png'
+import storyImage from '../../assets/story.png'
 import lakeImage from '../../assets/lake.png';
 import learnImage from '../../assets/learn.png';
 import ratingImage from '../../assets/rating.png';
@@ -13,13 +13,16 @@ import rightIcon from '../../assets/right.png';
 <main class={styles.container}>
     <section class={styles.header}>
         <div class={styles.backgroundLogo}>
-           <h1 class={styles.title}>Carpfishing Blog</h1>
+            <a href="/" class={styles.logoLink}>
+                
+             <h1 class={styles.title}>Carpfishing Blog</h1>
+           </a>
         </div>
         <img src={startImage.src} alt="Start Picture" class={styles.startPicture} />
         <div class={styles.menu}>
             <button class={styles.button}>
-            <a href="/news" class={styles.menuItem}>
-              <img src={newsImage.src} alt="News" class={`${styles.newsImage} ${styles.iconImage}`}/>
+            <a href="/story" class={styles.menuItem}>
+              <img src={storyImage.src} alt="Story" class={`${styles.newsImage} ${styles.iconImage}`}/>
             </a>
             </button>
             <button class={styles.button}>
