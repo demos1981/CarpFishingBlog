@@ -1,0 +1,33 @@
+.backgroundLogo {
+  position: absolute;
+  z-index: 1;
+
+  left: 45%;
+  width: 18rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  border-radius: 30px;
+}
+
+.logoLink {
+  display: flex;
+  width: 18rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 2rem;
+  color: #b8e994;
+  text-align: center;
+}

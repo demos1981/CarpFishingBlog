@@ -3,19 +3,12 @@ import styles from './MenuButton.module.css';
 import startImage from '../../assets/startPicture.png';
 import MenuButtonToggle from '../menuButton/MenuButtonToggle.tsx';
 
-
-
-
 ---
 
 <section class={styles.container}>
     <div class={styles.header}>
-        <div class={styles.backgroundLogo}>
-            <a href="/" class={styles.logoLink}>         
-             <h1 class={styles.title}>Carpfishing Blog</h1>
-           </a>
-        </div>
-            <img src={startImage.src} alt="Start Picture" class={styles.startPicture} />    
+       
+        <img src={startImage.src} alt="Start Picture" class={styles.startPicture} />    
    </div>
 </section>
 <MenuButtonToggle client:load/>
