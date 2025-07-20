@@ -1,62 +1,24 @@
 ---
 import styles from './MenuButton.module.css';
 import startImage from '../../assets/startPicture.png';
-import storyImage from '../../assets/story.png'
-import lakeImage from '../../assets/lake.png';
-import learnImage from '../../assets/learn.png';
-import ratingImage from '../../assets/rating.png';
-import contactImage from '../../assets/contact.png';
-import eventsImage from '../../assets/events.png';
-import rightIcon from '../../assets/right.png';
+import MenuButtonToggle from '../menuButton/MenuButtonToggle.tsx';
+
+
+
+
 ---
 
-<main class={styles.container}>
-    <section class={styles.header}>
+<section class={styles.container}>
+    <div class={styles.header}>
         <div class={styles.backgroundLogo}>
-            <a href="/" class={styles.logoLink}>
-                
+            <a href="/" class={styles.logoLink}>         
              <h1 class={styles.title}>Carpfishing Blog</h1>
            </a>
         </div>
-        <img src={startImage.src} alt="Start Picture" class={styles.startPicture} />
-        <div class={styles.menu}>
-            <button class={styles.button}>
-            <a href="/story" class={styles.menuItem}>
-              <img src={storyImage.src} alt="Story" class={`${styles.newsImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-            <button class={styles.button}>
-            <a href="/lake" class={styles.menuItem}>
-              <img src={lakeImage.src} alt="Lake" class={`${styles.lakeImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-          
-            <button class={styles.button}>
-            <a href="/learn" class={styles.menuItem}>
-              <img src={learnImage.src} alt="Learn" class={`${styles.learnImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-           <button class={styles.rightIcon}>
-               <img src={rightIcon.src} alt="Right Icon" class={styles.rightIconImage} />
-            </button>
-            <button class={styles.button}>
-            <a href="/rating" class={styles.menuItem}>
-              <img src={ratingImage.src} alt="Rating" class={`${styles.ratingImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-            <button class={styles.button}>
-            <a href="/contacts" class={styles.menuItem}>
-              <img src={contactImage.src} alt="Contacts" class={`${styles.contactImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-            <button class={styles.button}>
-            <a href="/events" class={styles.menuItem}>
-              <img src={eventsImage.src} alt="Events" class={`${styles.eventsImage} ${styles.iconImage}`}/>
-            </a>
-            </button>
-           
-        </div>
-       
-   </section>
-</main>
+            <img src={startImage.src} alt="Start Picture" class={styles.startPicture} />    
+   </div>
+</section>
+<MenuButtonToggle client:load/>
+
+ 
 
