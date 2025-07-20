@@ -1,9 +1,8 @@
 .backgroundLogo {
   position: absolute;
   z-index: 1;
-
   left: 45%;
-  width: 18rem;
+  width: 21rem;
   height: 3rem;
   display: flex;
   justify-content: center;
@@ -15,7 +14,7 @@
 
 .logoLink {
   display: flex;
-  width: 18rem;
+  width: 22rem;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -24,7 +23,7 @@
 
 .title {
   position: relative;
-  left: 40%;
+  left: 42%;
   transform: translateX(-50%);
   z-index: 100;
   font-size: 2rem;

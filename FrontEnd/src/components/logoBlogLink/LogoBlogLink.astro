@@ -2,13 +2,14 @@
 ---
 
 import styles from  './LogoBlogLink.module.css';
-
+import type { Props } from '../../types/props';
+const { title } = Astro.props as Props;
 ---
 
  
  
  <div class={styles.backgroundLogo}>
             <a href="/" class={styles.logoLink}>         
-             <h1 class={styles.title}>Carpfishing Blog</h1>
+             <h1 class={styles.title}>{title}</h1>
            </a>
 </div>
