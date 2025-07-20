@@ -102,7 +102,6 @@
   left: 0.5rem;
   width: 2rem;
   height: 2rem;
-  rotate: 180deg;
 }
 .menuItem:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -123,4 +122,14 @@
 }
 .menuOpen {
   display: block;
+}
+
+.iconRotated {
+  transform: rotate(180deg); /* повертається назад */
+  transition: transform 0.3s ease;
+}
+
+.iconDefault {
+  transform: rotate(0deg); /* за замовчуванням */
+  transition: transform 0.3s ease;
 }

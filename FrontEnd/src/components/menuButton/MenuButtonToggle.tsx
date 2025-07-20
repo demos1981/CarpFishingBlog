@@ -20,7 +20,9 @@ export default function ToggleMenu() {
         <img
           src={rightIcon.src}
           alt="Right Icon"
-          className={styles.rightIconImage}
+          className={`${styles.rightIconImage} ${
+            isOpen ? styles.iconRotated : styles.iconDefault
+          }`}
         />
       </button>
 
