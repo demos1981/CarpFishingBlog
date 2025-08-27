@@ -1,0 +1,14 @@
+---
+import type{ TextAndPictureProps } from '../../types/props';
+
+const { image, text } = Astro.props as TextAndPictureProps;
+---
+
+<section class="picture-and-text">
+  <div class="image-container">
+    <img src={image} alt="Decorative image" class="decorative-image" />
+  </div>
+  <div class="text-container">
+    <p>{text}</p>
+  </div>
+</section>

@@ -1,18 +1,19 @@
 import { useState } from "react";
 import styles from "./MenuButton.module.css";
-import rightIcon from "../../assets/right.png";
-import storyImage from "../../assets/story.png";
-import lakeImage from "../../assets/lake.png";
-import learnImage from "../../assets/learn.png";
-import ratingImage from "../../assets/rating.png";
-import contactImage from "../../assets/contact.png";
-import eventsImage from "../../assets/events.png";
+import rightIcon from "src/assets/right.png";
+import storyImage from "src/assets/story.png";
+import lakeImage from "src/assets/lake.png";
+import learnImage from "src/assets/learn.png";
+import ratingImage from "src/assets/rating.png";
+import contactImage from "src/assets/contact.png";
+import eventsImage from "src/assets/events.png";
+import { motion } from "framer-motion";
 export default function ToggleMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <button
+      <motion.button
         id="menuToggleBtn"
         className={styles.rightIcon}
         onClick={() => setIsOpen(!isOpen)}
@@ -24,9 +25,9 @@ export default function ToggleMenu() {
             isOpen ? styles.iconRotated : styles.iconDefault
           }`}
         />
-      </button>
+      </motion.button>
 
-      <div className={isOpen ? styles.menuOpen : styles.menuClosed}>
+      <motion.div className={isOpen ? styles.menuOpen : styles.menuClosed}>
         <div id="menuContent" className={styles.menu}>
           <button className={styles.button}>
             <a href="/story" className={styles.menuItem}>
@@ -85,7 +86,7 @@ export default function ToggleMenu() {
             </a>
           </button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
